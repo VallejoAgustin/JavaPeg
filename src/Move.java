@@ -24,15 +24,9 @@ public class Move {
         this.bTo = from;
     }
 
-    public int getF(){
-        return from;
-    }
+    public int getF(){ return from; }
 
-    public int getT(){
-        return to;
-    }
+    public int getT(){ return to; }
 
-    public int getO(){
-        return over;
-    }
+    public int getO(){ return over; }
 }
