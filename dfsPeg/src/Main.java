@@ -7,7 +7,6 @@ public class Main {
     //checks whether a move is possible
     public static boolean isMove(Board kd, Move m){
         int f = m.getF(), o = m.getO(), t = m.getT();
-        //Board c = new Board(kd);//copy over kd
 
         //if move possible
         if(kd.getIndex(f) == 1 && kd.getIndex(o) == 1 && kd.getIndex(t) == 0){
@@ -21,7 +20,7 @@ public class Main {
     public static boolean solve(Board kd, Move[] moves, List<Move> totalMoves){
         final int NUM_OF_POSSIBLE_MOVES = 18;
 
-        int k = kd.getIndex(15);
+        int k = kd.getIndex(15);//gets how many moves this current solution has left
 
         if(kd.pegsRemaining() == 1){//found a solution
             return true;
@@ -44,20 +43,17 @@ public class Main {
             while(!possibleMoves.empty()){//while we have moves left
                 Move currentMove = possibleMoves.pop();//pop move from stack
 
-                Board kc = new Board(kd);
-                kc.doMove(currentMove);
-                List<Move> curTotalMoves = new LinkedList<>(totalMoves);
-                curTotalMoves.add(currentMove);
+                Board kc = new Board(kd);//copy over the board
+                kc.doMove(currentMove);//do the move just popped
 
-                if(solve(kc, moves, totalMoves)){
-                    totalMoves.add(currentMove);
+                if(solve(kc, moves, totalMoves)){//if this move solves it
+                    totalMoves.add(currentMove);//add move to currentMoves which is used main
                     return true;
-                }
-                else{
-                    continue;
                 }
             }
         }
+
+        //means we ran out of moves, so we did not solve it
         return false;
     }
 

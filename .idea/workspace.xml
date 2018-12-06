@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af0a28e5-da25-411d-bfbf-1386a4cf1d5d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/cracker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dfsPeg/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dfsPeg/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dfsPeg/out/production/dfsPeg/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/dfsPeg/out/production/dfsPeg/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dfsPeg/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/dfsPeg/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
