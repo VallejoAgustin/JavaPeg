@@ -1,2 +1,2 @@
-# CrackerBarrelPegPuzzle
-Python code solving the puzzle at: https://shop.crackerbarrel.com/toys-games/games/travel-games/peg-game/606154
+# CrackerBarrelPegPuzzleSolver in Java
+To program finds 5 solutions to the puzzle (as per the original cracker.py) and prints out the steps it took to get the solution.
